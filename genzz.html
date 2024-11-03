@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GenZ Club</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      video {
+        max-width: 600px;
+        display: block;
+        margin: 20px auto;
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      body {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+      }
+      header {
+        background-color: #111;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      nav {
+        margin: 20px 0;
+      }
+      nav a {
+        margin: 0 15px;
+        color: #ff6f61;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      .slideshow-container {
+        max-width: 600px;
+        position: relative;
+        margin: 20px auto;
+      }
+      .mySlides {
+        display: none;
+      }
+      .mySlides img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      section {
+        margin-bottom: 40px;
+      }
+      footer {
+        text-align: center;
+        padding: 15px;
+        background-color: #111;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to GenZ Music Club</h1>
+      <nav>
+        <a href="about.html">About Members</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <div class="container">
+      <section id="about">
+        <h2>About Us</h2>
+        <video height="500"  width="500" controls>
+          <source src="vd/intro.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section id="events">
+        <h2>Events</h2>
+        <video width="600" controls>
+          <source src="vd/detox_event.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section>
+        <h2>Our Opening</h2>
+        <video width="600" controls>
+          <source src="vd/op.mp4" type="video/mp4" />
+        </video>
+      </section>
+      
+      <section>
+        <h2>Photo Slideshow</h2>
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <img src="pic/first event/1.jpg" alt="Image 1" />
+          </div>
+          <div class="mySlides">
+            <img src="pic/first event/2.jpg" alt="Image 2" />
+          </div>
+          <div class="mySlides">
+            <img src="pic/first event/3.jpg" alt="Image 3" />
+          </div>
+          <div class="mySlides">
+            <img src="pic/first event/4.jpg" alt="Image 3" />
+          </div>
+          <div class="mySlides">
+            <img src="pic/first event/11.jpg" alt="Image 3" />
+          </div>
+          <div class="mySlides">
+            <img src="pic/first event/12.jpg" alt="Image 3" />
+          </div>
+          <div class="mySlides">
+            <img src="pic/first event/15.jpg" alt="Image 3" />
+          </div>
+          <div class="mySlides">
+            <img src="pic/first event/16.jpg" alt="Image 3" />
+          </div>
+          <div class="mySlides">
+            <img src="pic/first event/17.jpg" alt="Image 3" />
+          </div>
+          <div class="mySlides">
+            <img src="pic/first event/18.jpg" alt="Image 3" />
+          </div>
+          <div class="mySlides">
+            <img src="pic/first event/20.jpg" alt="Image 3" />
+          </div>
+          <div class="mySlides">
+            <img src="pic/first event/22.jpg" alt="Image 3" />
+          </div>
+          <div class="mySlides">
+            <img src="pic/first event/23.jpg" alt="Image 3" />
+          </div>
+          <div class="mySlides">
+            <img src="pic/first event/25.jpg" alt="Image 3" />
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:genzclubisamt.com">genzclubisamt.com</a></p>
+        <p>Phone: (+216) 29 260 221</p>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2024 GenZ Music Club. All rights reserved.</p>
+      <p>by: houssein.elkahla</p>
+      <p>
+        <a href="https://www.instagram.com/ka7la__69/" target="_blank">
+          <img
+            src="pic/first event/insta.png"
+            alt="Instagram"
+            style="width: 40px; height: 40px"
+          />
+        </a>
+      </p>
+    </footer>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let slides = document.getElementsByClassName("mySlides");
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+
+      function plusSlides(n) {
+        let slides = document.getElementsByClassName("mySlides");
+        if (n > 0) {
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+        } else {
+          slideIndex--;
+          if (slideIndex < 1) {
+            slideIndex = slides.length;
+          }
+        }
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
